@@ -1,10 +1,10 @@
 Table of contents, with short description of each file in project:
 
-<Perceptron.py> - contains a Perceptron class, that takes input list, weight list
-                and bias for particular neuron in layer. It has a <output> method,
-                which returns output of that neuron, and a <calculate_layer> function,
-                which returns a list of outputs of all given neurons in layer.
-                Kinda playground in general
+           <Perceptron.py> - contains a Perceptron class, that takes input list, weight list
+                           and bias for particular neuron in layer. It has a <output> method,
+                           which returns output of that neuron, and a <calculate_layer> function,
+                           which returns a list of outputs of all given neurons in layer.
+                           Kinda playground in general
 
-      <script1> - Bunch of general informations about NumPy arrays and linear algebra
-                with examples and comments, also kinda playground
+<linear_algebra_basics.py> - Bunch of general informations about NumPy arrays and linear algebra
+                           with examples and comments, also kinda playground and personal manual

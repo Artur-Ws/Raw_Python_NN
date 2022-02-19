@@ -1,4 +1,5 @@
 import numpy as np
+from random_matrix import random_matrix
 
 ### 1 ### Perform adding row vector to a square matrix
 ones = np.ones([4, 4])
@@ -46,3 +47,15 @@ print("\nMatrix product of matrices:\n", matrix1, "\nand\n",
 # shape of resulting matrix is determined by number of rows in first matrix
 # and number of columns in second one. Here shape (2,4)X(4,3) - 4=4 so we can perform
 # a matrix product and result will have a shape of (2,3)
+
+
+### 5 ### Batch of data to layer of neurons - matrix product part.2
+input_set = random_matrix(10, 4)
+weight_set = random_matrix(3, 4, [-5, 5])
+# Batch of 10 samples data with 4 features and layer of 3 neurons with 4 weights each
+# first weight set need to be transposed to perform matrix product
+trans_weight_set = weight_set.T
+layer1_output = np.dot(input_set, trans_weight_set)
+print(layer1_output)
+
+
