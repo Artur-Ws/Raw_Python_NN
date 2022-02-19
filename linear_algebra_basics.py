@@ -55,7 +55,25 @@ weight_set = random_matrix(3, 4, [-5, 5])
 # Batch of 10 samples data with 4 features and layer of 3 neurons with 4 weights each
 # first weight set need to be transposed to perform matrix product
 trans_weight_set = weight_set.T
-layer1_output = np.dot(input_set, trans_weight_set)
-print(layer1_output)
+layer_output = np.dot(input_set, trans_weight_set)
+print(layer_output.shape)
+# Shape of layer_output is (10, 3) which means there is a 10 sets
+# of 3 neuron outputs, one for each particular feature set
+
+
+### 6 ### Building a network with hidden layer
+feature_set = random_matrix(10, 5)
+weight_set_1 = random_matrix(4, 5, [-5, 5])
+bias_set_1 = random_matrix(1, 4, [0, 5])
+weight_set_2 = random_matrix(3, 4, [-5, 5])
+bias_set_2 = random_matrix(1, 3, [0, 5])
+
+first_layer_output = np.dot(feature_set, weight_set_1.T) + bias_set_1
+# First layer output has a shape of (10, 4) thus we have 4 neurons here
+# now it can be passed to the second layer as a input dataset
+# second layer has 3 neurons and set of 4 weights for each neuron,
+# because previous layer has 4 neurons, thus 4 inputs to the second layer
+second_layer_output = np.dot(first_layer_output, weight_set_2.T) + bias_set_2
+
 
 

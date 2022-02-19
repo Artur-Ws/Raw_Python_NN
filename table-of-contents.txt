@@ -6,5 +6,11 @@ Table of contents, with short description of each file in project:
                            which returns a list of outputs of all given neurons in layer.
                            Kinda playground in general
 
-<linear_algebra_basics.py> - Bunch of general informations about NumPy arrays and linear algebra
+<linear_algebra_basics.py> - Bunch of general information about NumPy arrays and linear algebra
                            with examples and comments, also kinda playground and personal manual
+
+        <random_matrix.py> - File contains a function <random_matrix> for matrices generation,
+                           which has each element value between given range, and certain number
+                           of rows and columns
+
+
