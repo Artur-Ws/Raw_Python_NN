@@ -11,6 +11,7 @@ Table of contents, with short description of each file in project:
 
         <random_matrix.py> - File contains a function <random_matrix> for matrices generation,
                            which has each element value between given range, and certain number
-                           of rows and columns
+                           of rows and columns.
+                           This was made before i discovered a numpy.random.randn
 
 
