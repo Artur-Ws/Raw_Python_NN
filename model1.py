@@ -1,4 +1,7 @@
 import numpy as np
+import matplotlib.pyplot as plt
+import math
+from data_generation import spiral
 
 
 class LayerDense:
@@ -12,3 +15,6 @@ class LayerDense:
 
     def forward(self, inputs):
         self.output = np.dot(inputs, self.weights) + self.biases
+
+
+spiral(100, 3)
