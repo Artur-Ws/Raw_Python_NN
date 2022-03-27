@@ -17,4 +17,4 @@ class LayerDense:
         self.output = np.dot(inputs, self.weights) + self.biases
 
 
-spiral(100, 3)
+spiral(100, 3, noise=0.5, color=False)
